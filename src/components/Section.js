@@ -107,6 +107,5 @@ const RightButton = styled(LeftButton)`
 const DownArrow = styled.img`
     height: 40px;
     margin-bottom: 30px;
-    overflow: hidden;
     animation: animateDown infinite 1.5s;
 `

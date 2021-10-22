@@ -5,6 +5,7 @@
     --gray: #393c41;
     --dark-gray: #171a20;
     --lite-gray: #5c5e62;
+    --lite-gray-op: #5c5e621A;
     
     font-size: 16px;
 }
@@ -19,6 +20,7 @@
 
 body {
     width: 100%;
+    overflow-x: hidden;
 }
 
 @keyframes animateDown {
