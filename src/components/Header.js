@@ -132,3 +132,38 @@ const MobileRightMenu = styled.div`
         display: unset;
     }
 `
+
+const SideMenu = styled.div`
+    z-index: 10000000;
+    position: fixed;
+    background-color: var(--white);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    list-style: none;
+    width: 300px;
+    text-align: left;
+
+    transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
+
+    li {
+        margin: 25px 0 0 35px;
+    }
+
+    li a {
+        text-decoration: none;
+        padding: 5px 15px;
+    }
+
+    li a:hover {
+        background-color: var(--lite-gray-op);
+        border-radius: 20px;
+    }
+`
+
+const CloseX = styled.div`
+    width: inherit;
+    text-align: right;
+    padding: 15px 15px 0 0;
+    cursor: pointer;
+`
