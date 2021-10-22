@@ -1,7 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 
 function Header() {
+
+    const [sideMenuStatus, setSideMenuStatus] = useState(false)
+
     return (
         <div>
 
@@ -39,6 +42,27 @@ function Header() {
                     <a href=''>Menu</a>
 
                 </MobileRightMenu>
+
+                <SideMenu show = {sideMenuStatus}>
+
+                    <CloseX onClcik = {() => setSideMenuStatus(false)}>&#x2715;</CloseX>
+
+                    <li><a href=''>Existing Inventory</a></li>
+                    <li><a href=''>Used Inventory</a></li>
+                    <li><a href=''>Trade-In</a></li>
+                    <li><a href=''>Test Drive</a></li>
+                    <li><a href=''>Cybertruck</a></li>
+                    <li><a href=''>Roadster</a></li>
+                    <li><a href=''>Semi</a></li>
+                    <li><a href=''>Chargine</a></li>
+                    <li><a href=''>Powerwall</a></li>
+                    <li><a href=''>Commercial Energy</a></li>
+                    <li><a href=''>Utilities</a></li>
+                    <li><a href=''>Find Us</a></li>
+                    <li><a href=''>Support</a></li>
+                    <li><a href=''>Investor Relations</a></li>
+
+                </SideMenu>
 
             </NavBar>
 
