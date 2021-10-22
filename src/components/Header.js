@@ -56,6 +56,7 @@ const NavBar = styled.div`
     padding: 0 0 0 40px;
     display: grid;
     grid-template-columns: 300px 1fr 300px;
+    z-index: 10000;
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr 1fr;
