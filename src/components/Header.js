@@ -110,7 +110,6 @@ const RightMenu = styled.div`
 `
 
 const MobileRightMenu = styled.div`
-    display: none;
     text-align: right;
     display: flex;
     padding: 0 40px;
@@ -125,6 +124,8 @@ const MobileRightMenu = styled.div`
         background-color: var(--lite-gray-op);
         border-radius: 20px;
     }
+
+    display: none;
 
     @media (max-width: 768px) {
         display: unset;
