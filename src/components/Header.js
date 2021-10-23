@@ -33,13 +33,13 @@ function Header() {
 
                     <a href=''>Shop</a>
                     <a href=''>Account</a>
-                    <a href=''>Menu</a>
+                    <li onClcik = {() => setSideMenuStatus(true)}>Menu</li>
 
                 </RightMenu>
 
                 <MobileRightMenu>
                     
-                    <a href=''>Menu</a>
+                    <li onClcik = {() => setSideMenuStatus(true)}>Menu</li>
 
                 </MobileRightMenu>
 
@@ -127,6 +127,20 @@ const RightMenu = styled.div`
     a:hover {
         background-color: var(--lite-gray-op);
         border-radius: 20px;
+        padding: 5px 15px;
+    }
+
+    li {
+        list-style: none;
+        align-items: center;
+        padding: 5px 15px;
+        cursor: pointer;
+    }
+
+    li:hover {
+        background-color: var(--lite-gray-op);
+        border-radius: 20px;
+        padding: 5px 15px;
     }
 
     @media (max-width: 768px) {
@@ -139,16 +153,19 @@ const MobileRightMenu = styled.div`
     display: flex;
     padding: 0 40px;
 
-    a {
-        text-decoration: none;
-        color: var(--dark-gray);
+    li {
+        list-style: none;
+        align-items: center;
+        padding: 5px 15px;
+        cursor: pointer;
+    }
+
+    li:hover {
+        background-color: var(--lite-gray-op);
+        border-radius: 20px;
         padding: 5px 15px;
     }
 
-    a:hover {
-        background-color: var(--lite-gray-op);
-        border-radius: 20px;
-    }
 
     display: none;
 
