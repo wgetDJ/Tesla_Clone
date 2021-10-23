@@ -187,6 +187,7 @@ const SideMenu = styled.div`
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16);
 
     transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
+    transition: transform 0.2s;
 
     li {
         margin: 25px 0 0 35px;
